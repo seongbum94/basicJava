@@ -119,11 +119,101 @@ public class Sentence_02 {
 //			System.out.println(dan+" * "+i+" = "+dan*i);
 //		}
 //		
-		for(int a = 1; a < 10; a++){
-			for(int b = 1; b < 10; b++){
-				System.out.println(a+" * "+b+" = "+a*b);
+//		for(int a = 2; a < 10; a++){
+//			for(int b = 1; b < 10; b++){
+//				System.out.println(a+" * "+b+" = "+a*b);
+//			}
+//		}
+		
+		//1. 짝수단만 출력
+		for(int dan = 2; dan < 10; dan++){
+			if(dan % 2 == 0){
+				for(int i = 1; i < 10; i++){
+					System.out.println(dan + " * " + i + " = " + dan * i);
+				}
+			}
+		}
+		//2. 홀수곱만 출력
+		for(int dan = 2; dan < 10; dan++){
+			for(int i = 1; i < 10; i++){
+				if (i % 2 == 1){
+					System.out.println(dan + " * " + i + " = " + dan * i);
+				}
+			}
+		}
+		//3. 짝수단의 홀수곱만 출력
+		for(int dan = 2; dan < 10; dan++){
+			if(dan % 2 == 0){
+				for(int i = 1; i < 10; i++){
+					if (i % 2 == 1){
+						System.out.println(dan + " * " + i + " = " + dan * i);
+					}
+				}
 			}
 		}
 		
+		/*
+		 3. while문 
+		 	- 조건식과 수행해야 될 블럭{}만으로 구성되어있다.
+		 	- 기본구조
+		 	whlie(조건식){
+		 		조건식이 true일때 수행되는 문장
+		 	}
+		*/
+		
+		for(int i = 1; i< 10; i++){
+			System.out.println(i);
+		}
+		
+		int num = 1;
+		while(num < 10){
+			System.out.println(num);
+			num++;
+		}
+		
+		//1. 1~10까지의 합을 구해주세요(while문 이용)
+		int sum = 0;
+		num = 1;
+		while(num < 11){
+			sum += num;
+			num++;
+		}
+		System.out.println("1~10까지의 합 : "+sum);
+		
+		//2. 1~10까지의 홀수의 합을 구해주세요(while문 이용)
+		sum = 0;
+		num = 1;
+		while(num < 11){
+			if(num%2==1){
+				sum += num;
+			}
+			num++;
+		}
+		System.out.println("1~10까지의 홀수의 합 : "+sum);
+		
+		//3. 구구단을 while문 만을 이용해서 만들어주세요
+		int dan = 2;
+
+		while(dan < 10){
+			int i = 1;
+			while(i < 10){
+				System.out.println(dan+" * "+i+" = "+dan*i);
+				i++;
+			}
+			dan++;
+		}
+		
+		//4. 5~? 더하였을때 200이상이 되는가?
+		sum = 0;
+		num = 5;
+		while(sum<200){
+			sum += num;
+			num++;
+		}
+		System.out.println(num);
+		// String 
+		String str = "12345";
+		System.out.println(str.length());
+		System.out.println(str.charAt(0));
 	}
 }

@@ -38,6 +38,7 @@ public class Exam_04 {
 		  		}
 		  		System.out.print("+");
 		  	}
+		  	System.out.println("결과값 : "+result);
 		  	
 		  [4-4] 1+(-2)+3+(-4)+... 과 같은 식으로 계속 더해나갔을 때, 몇까지 더해야 총합이 100이상이 되는지 구하시오.
 			int sw = 1;
@@ -201,15 +202,19 @@ public class Exam_04 {
 		8*2=16 9*2=18
 		8*3=24 9*3=27
 		
-		for(int i = 2; i < 10; i++){
-			System.out.println("");
+		for(int j = 1; j < 4; j++){
+			for(int i = 2; i < 9 < i+=3){
+				System.out.println("");
+			}
 		}
-		
 		
 					
 		*/
-		
-		
+		for(int j = 1; j < 4; j++){
+			for(int i = 2; i < 9; i++){
+				System.out.println(i+"*"+j+"="+i*j);
+			}
+		}
 		
 	}
 }
