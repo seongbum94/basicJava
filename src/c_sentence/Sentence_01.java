@@ -119,17 +119,24 @@ public class Sentence_01 {
 		//   aa의 값이 3이면 "LG시그니쳐셋 당첨"
 		//   aa의 값이 4이면 "자전거 당첨"
 		//   aa의 값이 5이면 "영만빌딩내놔"
+		
 		// switch문으로 만들어주세요
+		System.out.println("aa : " + aa);
+		
 		switch(aa){
-		case 1 : System.out.println("강남에 32평 아파트 당첨");
-		break;
-		case 2 : System.out.println("람보르기니 당첨");
-		break;
-		case 3 : System.out.println("LG 시그니쳐셋 당첨");
-		break;
-		case 4 : System.out.println("자전거 당첨");
-		break;
-		default : System.out.println("영만빌딩내놔 당첨");
+		case 1 : 
+			System.out.println("강남에 32평 아파트 당첨");
+			break;
+		case 2 : 
+			System.out.println("람보르기니 당첨");
+			break;
+		case 3 : 
+			System.out.println("LG 시그니쳐셋 당첨");
+			break;
+		case 4 : 
+			System.out.println("자전거 당첨");
+			break;
+		default : System.out.println("영만빌딩내놔");
 		
 		}
 				
@@ -147,17 +154,23 @@ public class Sentence_01 {
 		}else {
 			System.out.println("나가");
 		}*/
-	
+		
+		System.out.println("score : " + score);
+		
 		switch(score/10){
-		case 9 : System.out.println("A");
-		break;
-		case 8 : System.out.println("B");
-		break;
-		case 7 : System.out.println("C");
-		break;
-		case 6 : System.out.println("D");
-		break;
-		default:
+			case 9 : 
+				System.out.println("A");
+				break;
+			case 8 : 
+				System.out.println("B");
+				break;
+			case 7 : 
+				System.out.println("C");
+				break;
+			case 6 : 
+				System.out.println("D");
+				break;
+			default:
 				System.out.println("나가");
 		}
 		
