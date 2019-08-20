@@ -2,12 +2,13 @@ package z_exam;
 
 public class Exam_04 {
 	public static void main(String[] args) {
+			
 		
 		/*
 		  
 		  [4-1] 다음의 문장들을 조건식으로 표현하라.
 			1. int형 변수 x가 10보다 크고 20보다 작을 때 true인 조건식			10 < x && x < 20
-			2. char형 변수 ch가 공백이나 탭이 아닐 때 true인 조건식			!( ch==' ' && ch == '\t')
+			2. char형 변수 ch가 공백이나 탭이 아닐 때 true인 조건식			!( ch==' ' || ch == '\t')
 			3. char형 변수 ch가 ‘x' 또는 ’X'일 때 true인 조건식			ch == 'x' && ch == 'X'
 			4. char형 변수 ch가 숫자(‘0’~‘9’)일 때 true인 조건식			'0' <= ch && ch <= '9'
 			5. char형 변수 ch가 영문자(대문자 또는 소문자)일 때 true인 조건식	'A' <= ch && ch<='Z' || 'a' <= ch && ch <= 'z'
@@ -211,6 +212,7 @@ public class Exam_04 {
 		num1 = num2;
 		num2 = num3;		
 		
+		
 		[4-12] 구구단의 일부분을 다음과 같이 출력하시오.
 		2*1=2  3*1=3  4*1=4
 		2*2=4  3*2=6  4*2=8
@@ -223,6 +225,18 @@ public class Exam_04 {
 		8*1=8  9*1=9
 		8*2=16 9*2=18
 		8*3=24 9*3=27
+		
+		답 : 
+		for(int k = 2; k < 9; k+=3){	
+			for(int i = 1; i < 4 ; i++){
+				for(int j = k; j < k+3 ;j++){
+					if(j!=10){
+						System.out.print(j+"*"+i+" = " + j*i+"  ");
+					}
+				}
+				System.out.println();
+			}
+		}
 		
 		[4-13] 다음은 주어진 문자열(value)이 숫자인지를 판별하는 프로그램이다. (1)에 알맞
 		은 코드를 넣어서 프로그램을 완성하시오.
