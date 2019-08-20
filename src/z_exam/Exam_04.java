@@ -2,7 +2,6 @@ package z_exam;
 
 public class Exam_04 {
 	public static void main(String[] args) {
-			
 		
 		/*
 		  
@@ -297,6 +296,27 @@ public class Exam_04 {
 		답 : 
 		result = result * 10 + tmp % 10;
 		tmp /= 10;
+		
+		
+		
+		4-15 회문수 문자열로
+		
+		String number = "12321";
+		String tmp = number;
+		String result =""; // 변수 number를 거꾸로 변환해서 담을 변수
+
+		int i = 0;
+		
+		while(i < number.length()){
+			result += tmp.charAt(i);
+			i++;
+		}
+		
+		if(number == result)
+		System.out.println( number + "는 회문수 입니다.");
+		
+		else
+		System.out.println( number + "는 회문수가 아닙니다.");
 		
 		*/
 	}
