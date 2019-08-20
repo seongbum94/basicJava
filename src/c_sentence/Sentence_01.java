@@ -136,7 +136,8 @@ public class Sentence_01 {
 		case 4 : 
 			System.out.println("자전거 당첨");
 			break;
-		default : System.out.println("영만빌딩내놔");
+		default : 
+			System.out.println("영만빌딩내놔");
 		
 		}
 				
@@ -158,6 +159,7 @@ public class Sentence_01 {
 		System.out.println("score : " + score);
 		
 		switch(score/10){
+			case 10: 	
 			case 9 : 
 				System.out.println("A");
 				break;
@@ -174,7 +176,6 @@ public class Sentence_01 {
 				System.out.println("나가");
 		}
 		
-		//추가sd
 		
 		
 		

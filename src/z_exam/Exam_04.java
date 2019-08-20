@@ -2,7 +2,7 @@ package z_exam;
 
 public class Exam_04 {
 	public static void main(String[] args) {
-		
+	
 		/*
 		  
 		  [4-1] 다음의 문장들을 조건식으로 표현하라.
@@ -100,7 +100,7 @@ public class Exam_04 {
 		
 		[4-8] 방정식 2x+4y=10의 모든 해를 구하시오. 단, x와 y는 정수이고 각각의 범위는0<=x<=10, 0<=y<=10 이다.
 		답 : 	
-		for(int x = 0; x <= 10; x++){
+		for(int x = 0; x < 11; x++){
 			for(int y = 0; y <= 10; y++){
 				if(x*2+4*y == 10){
 					System.out.println("x="+x+", y="+y);
@@ -139,21 +139,74 @@ public class Exam_04 {
 				}
 			}
 			
-			답 : 
+		답 : 
 			
-			int num = 12345;
-			int result = 0;
-				
-			while(!(num/10 == 0)){
-				if(num / 10 < 10){
-					result += num/10;
-				}
-				result += num % 10;
-				num/=10;
+		int num = 12345;
+		int result = 0;
+			
+		while(!(num/10 == 0)){
+			if(num / 10 < 10){
+				result += num/10;
 			}
+			result += num % 10;
+			num/=10;
+		}
+		
+		System.out.println(result);
+		
+		
+		
+		[4-11] 피보나치(Fibonnaci) 수열(數列)은 앞을 두 수를 더해서 다음 수를 만들어 나가는 수열이다. 
+		예를 들어 앞의 두 수가 1과 1이라면 그 다음 수는 2가 되고 
+		그 다음 수는 1과 2를 더해서 3이 되어서 1,1,2,3,5,8,13,21,... 과 같은 식으로 진행된다. 
+		1과 1부터시작하는 피보나치수열의 10번째 수는 무엇인지 계산하는 프로그램을 완성하시오.
+		
+		public class Exercise4_11 {
+			public static void main(String[] args) {
+			// Fibonnaci 수열의 시작의 첫 두 숫자를 1, 1로 한다.
+				int num1 = 1;
+				int num2 = 1;
+				int num3 = 0; // 세번째 값
+				
+				System.out.print(num1+","+num2);
+				
+				for (int i = 0 ; i < 8 ; i++ ) {
+				
+				num3 = num1 + num2;
+				num1 = num2;
+				num2 = num3;	
+				
+				(1) 알맞은 코드를 넣어 완성하시오.
+				
+				}
+			} // end of main
+		} // end of class
+		
+		답 : 
 			
-			System.out.println(result);
-			
+		num3 = num1 + num2;
+		num1 = num2;
+		num2 = num3;		
+		
+		[4-12] 구구단의 일부분을 다음과 같이 출력하시오.
+		2*1=2  3*1=3  4*1=4
+		2*2=4  3*2=6  4*2=8
+		2*3=6  3*3=9  4*3=12
+		
+		5*1=5  6*1=6  7*1=7
+		5*2=10 6*2=12 7*2=14
+		5*3=15 6*3=18 7*3=21
+		
+		8*1=8  9*1=9
+		8*2=16 9*2=18
+		8*3=24 9*3=27
+		
+		for(int i = 2; i < 10; i++){
+			System.out.println("");
+		}
+		
+		
+					
 		*/
 		
 		
